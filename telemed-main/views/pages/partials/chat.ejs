@@ -1,0 +1,36 @@
+<main>
+    <link rel="stylesheet" href="../public/css/chat.css">
+    <h1>Chat</h1>
+    <script>
+      const user = {
+          id: '<%- user.id %>',
+          name: '<%- user.first_name %>',
+          role: '<%- user.role %>'
+      };
+      const partner = '<%- partner %>';
+      const isDoctor = '<%- isDoctor %>';
+      const isPatient = '<%- isPatient %>';
+      const isAdmin = '<%- isAdmin %>';
+
+      // Set room and sender dynamically
+      const room = isDoctor 
+          ? `${user.id}-${partner}` 
+          : `${partner}-${user.id}`;
+      const sender = user.name;
+    </script>
+</head>
+<body>
+    <div id="chatContainer">
+      <div id="messagesContainer" class="messages-container">
+          <!-- Messages will dynamically appear here -->
+      </div>
+      <div id="typingIndicator" class="typing-indicator" style="display: none;">
+          <!-- Typing indicator text will dynamically appear here -->
+      </div>
+      <form id="chatForm" class="chat-form">
+          <input type="text" id="messageInput" class="message-input" placeholder="Type a message..." />
+          <button type="submit" class="send-button">Send</button>
+      </form>
+    </div>
+    <script src="../public/js/chat.js"></script>
+</main>>

@@ -1,0 +1,29 @@
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4">ED Visits</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Patient ID</th>
+                    <th>Acuity</th>
+                    <th>Reason for Visit</th>
+                    <th>Disposition</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% edVisits.forEach(edVisit => { %>
+                    <tr>
+                        <td><%= edVisit.ed_visit_id %></td>
+                        <td><%= edVisit.patient_id %></td>
+                        <td><%= edVisit.acuity %></td>
+                        <td><%= edVisit.reason_for_visit %></td>
+                        <td><%= edVisit.disposition %></td>
+                        <td><a href="/ed_visits/<%= edVisit.ed_visit_id %>">View Details</a></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</main>>

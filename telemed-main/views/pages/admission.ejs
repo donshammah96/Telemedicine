@@ -1,0 +1,15 @@
+<main>
+    <body>
+        <div class="container mt-5">
+            <h1 class="mb-4">Admission Details</h1>
+            <p><strong>ID:</strong> <%= admission.admission_id %></p>
+            <p><strong>Patient ID:</strong> <%= admission.patient_id %></p>
+            <p><strong>Health Center ID:</strong> <%= admission.health_center_id %></p>
+            <p><strong>Admission Date:</strong> <%= admission.admission_date %></p>
+            <p><strong>Discharge Date:</strong> <%= admission.discharge_date %></p>
+            <p><strong>Disposition:</strong> <%= admission.discharge_disposition %></p>
+            <p><strong>Service:</strong> <%= admission.service %></p>
+            <p><strong>Primary Diagnosis:</strong> <%= admission.primary_diagnosis %></p>
+            <a href="/admissions" class="btn btn-primary">Back to Admissions</a>
+        </div>
+</main>

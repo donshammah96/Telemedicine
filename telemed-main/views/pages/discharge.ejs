@@ -1,0 +1,30 @@
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4">Discharge Details</h1>
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <td><%= discharge.discharge_id %></td>
+                </tr>
+                <tr>
+                    <th>Patient ID</th>
+                    <td><%= discharge.patient_id %></td>
+                </tr>
+                <tr>
+                    <th>Health Center ID</th>
+                    <td><%= discharge.health_center_id %></td>
+                </tr>
+                <tr>
+                    <th>Discharge Date</th>
+                    <td><%= discharge.discharge_date %></td>
+                </tr>
+                <tr>
+                    <th>Disposition</th>
+                    <td><%= discharge.discharge_disposition %></td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/discharges" class="btn btn-primary">Back to Discharges</a>
+    </div>
+</main>

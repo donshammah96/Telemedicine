@@ -1,0 +1,36 @@
+<main>
+    <div class="container-fluid">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="dashboard.ejs">Dashboard</a></li>
+                <li><a href="appointments.ejs">Appointments</a></li>
+                <li><a href="../partials/chat.ejs">Chat</a></li>
+                <li><a href="analytics.ejs">Analytics</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="content">
+            <header class="header">
+                <h1>Welcome, Dr. <%= doctor.first_name %></h1>
+            </header>
+
+            <section class="dashboard">
+                <h2>Upcoming Appointments</h2>
+                <div id="appointmentContainer" class="appointment-container">
+                    <% appointments.forEach(appointment => { %>
+                        <div class="appointment-card">
+                            <h3><%= appointment.title %></h3>
+                            <p><%= appointment.date %></p>
+                            <p><%= appointment.time %></p>
+                        </div>
+                    <% }) %>
+                </div>
+            </section>
+
+            <%- include('../partials/chat') %>
+            <button onclick="toggleChat()">Open Chat</button>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,33 @@
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4">Appointments</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Patient ID</th>
+                    <th>Doctor ID</th>
+                    <th>Health Center ID</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% appointments.forEach(appointment => { %>
+                    <tr>
+                        <td><%= appointment.appointment_id %></td>
+                        <td><%= appointment.patient_id %></td>
+                        <td><%= appointment.doctor_id %></td>
+                        <td><%= appointment.health_center_id %></td>
+                        <td><%= appointment.appointment_date %></td>
+                        <td><%= appointment.appointment_time %></td>
+                        <td><%= appointment.appointment_status %></td>
+                        <td><a href="/appointments/<%= appointment.appointment_id %>">View Details</a></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</main>

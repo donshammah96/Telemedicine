@@ -1,0 +1,43 @@
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4">Visits</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Patient ID</th>
+                    <th>Doctor ID</th>
+                    <th>Health Center ID</th>
+                    <th>Appointment ID</th>
+                    <th>Date of Visit</th>
+                    <th>Date Scheduled</th>
+                    <th>Visit Department ID</th>
+                    <th>Visit Type</th>
+                    <th>Blood Pressure Systolic</th>
+                    <th>Blood Pressure Diastolic</th>
+                    <th>Pulse</th>
+                    <th>Visit Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% visits.forEach(function(visit) { %>
+                <tr>
+                    <td><%= visit.visit_id %></td>
+                    <td><%= visit.patient_id %></td>
+                    <td><%= visit.doctor_id %></td>
+                    <td><%= visit.health_center_id %></td>
+                    <td><%= visit.appointment_id %></td>
+                    <td><%= visit.date_of_visit %></td>
+                    <td><%= visit.date_scheduled %></td>
+                    <td><%= visit.visit_department_id %></td>
+                    <td><%= visit.visit_type %></td>
+                    <td><%= visit.blood_pressure_systolic %></td>
+                    <td><%= visit.blood_pressure_diastolic %></td>
+                    <td><%= visit.pulse %></td>
+                    <td><%= visit.visit_status %></td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</main>>

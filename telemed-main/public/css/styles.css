@@ -1,0 +1,159 @@
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 1000;
+}
+.chat-widget.open {
+    display: block;
+}
+.chat-header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.close-chat {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.chat-body {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+.chat-footer {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    gap: 10px;
+}
+.chat-footer .form-control {
+    flex-grow: 1;
+}
+
+#messagesContainer {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.message {
+    margin: 5px 0;
+}
+
+.my-message {
+    text-align: right;
+    background: #d1f5d3;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.other-message {
+    text-align: left;
+    background: #e3e3e3;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #888;
+}
+
+#typingIndicator {
+    font-style: italic;
+    color: #666;
+    display: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA;
+    color: #333;
+  }
+
+  header {
+    background: #007BFF;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #E9F7FE;
+  }
+
+  .hero-text {
+    max-width: 50%;
+  }
+
+  .hero img {
+    width: 40%;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px;
+  }
+
+  .feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .cta-button {
+    background: #d0dad3;
+    color: rgb(29, 2, 2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .cta-button:hover {
+    background: #1C7430;
+  }
+  
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}

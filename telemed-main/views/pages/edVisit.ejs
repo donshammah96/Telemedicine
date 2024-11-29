@@ -1,0 +1,34 @@
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4">ED Visit Details</h1>
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <td><%= edVisit.ed_visit_id %></td>
+                </tr>
+                <tr>
+                    <th>Visit ID</th>
+                    <td><%= edVisit.visit_id %></td>
+                </tr>
+                <tr>
+                    <th>Patient ID</th>
+                    <td><%= edVisit.patient_id %></td>
+                </tr>
+                <tr>
+                    <th>Acuity</th>
+                    <td><%= edVisit.acuity %></td>
+                </tr>
+                <tr>
+                    <th>Reason for Visit</th>
+                    <td><%= edVisit.reason_for_visit %></td>
+                </tr>
+                <tr>
+                    <th>Disposition</th>
+                    <td><%= edVisit.disposition %></td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/ed_visits" class="btn btn-primary">Back to ED Visits</a>
+    </div>
+</main>>

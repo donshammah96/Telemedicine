@@ -1,0 +1,35 @@
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4">Admissions</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Patient ID</th>
+                    <th>Health Center ID</th>
+                    <th>Admission Date</th>
+                    <th>Discharge Date</th>
+                    <th>Disposition</th>
+                    <th>Service</th>
+                    <th>Primary Diagnosis</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% admissions.forEach(admission => { %>
+                    <tr>
+                        <td><%= admission.admission_id %></td>
+                        <td><%= admission.patient_id %></td>
+                        <td><%= admission.health_center_id %></td>
+                        <td><%= admission.admission_date %></td>
+                        <td><%= admission.discharge_date %></td>
+                        <td><%= admission.discharge_disposition %></td>
+                        <td><%= admission.service %></td>
+                        <td><%= admission.primary_diagnosis %></td>
+                        <td><a href="/admissions/<%= admission.admission_id %>">View Details</a></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</main>

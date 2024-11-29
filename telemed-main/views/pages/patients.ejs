@@ -1,0 +1,25 @@
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4">Patients</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% patients.forEach(patient => { %>
+                    <tr>
+                        <td><%= patient.patient_id %></td>
+                        <td><%= patient.first_name %></td>
+                        <td><%= patient.last_name %></td>
+                        <td><a href="/patients/<%= patient.patient_id %>">View Details</a></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</main>>

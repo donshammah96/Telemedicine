@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="js/profile.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Profile</h1>
+        <form id="profileForm" method="post">
+            <input type="hidden" name="user_id" id="user_id">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" required>
+            <span id="first_name_error" class="error"></span><br>
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" required>
+            <span id="last_name_error" class="error"></span><br>
+            <label for="date_of_birth">Date of Birth:</label>
+            <input type="date" name="date_of_birth" id="date_of_birth" required>
+            <span id="dob_error" class="error"></span><br>
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required>
+            <span id="address_error" class="error"></span><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required>
+            <span id="phone_error" class="error"></span><br>
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <span id="gender_error" class="error"></span><br>
+            <label for="language">Language:</label>
+            <input type="text" name="language" id="language" required>
+            <span id="language_error" class="error"></span><br>
+            <label for="illness">Illness:</label>
+            <input type="text" name="illness" id="illness" required>
+            <span id="illness_error" class="error"></span><br>
+            <label>Preferred Contact Method:</label>
+            <input type="radio" id="contactEmail" name="contactMethod" value="Email" required>
+            <label for="contactEmail">Email</label>
+            <input type="radio" id="contactPhone" name="contactMethod" value="Phone" required>
+            <label for="contactPhone">Phone</label><br><br>
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+</body>
+</html>

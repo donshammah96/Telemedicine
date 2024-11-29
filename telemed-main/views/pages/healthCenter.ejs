@@ -1,0 +1,26 @@
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4"><%= healthCenter.health_center_name %></h1>
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th>Location</th>
+                    <td><%= healthCenter.health_center_address %></td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td><%= healthCenter.health_center_phone %></td>
+                </tr>
+                <tr>
+                    <th>Latitude</th>
+                    <td><%= healthCenter.latitude %></td>
+                </tr>
+                <tr>
+                    <th>Longitude</th>
+                    <td><%= healthCenter.longitude %></td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/health-centers" class="btn btn-primary">Back to Health Centers</a>
+    </div>
+</main>>

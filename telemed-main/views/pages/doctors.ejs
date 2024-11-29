@@ -1,0 +1,35 @@
+<main>
+    <div class="container mt-5">
+        <h1 class="mb-4">Doctors</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Health Center ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Speciality</th>
+                    <th>Availability</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Date Joined</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% doctors.forEach(function(doctor) { %>
+                <tr>
+                    <td><%= doctor.doctor_id %></td>
+                    <td><%= doctor.health_center_id %></td>
+                    <td><%= doctor.first_name %></td>
+                    <td><%= doctor.last_name %></td>
+                    <td><%= doctor.doctor_speciality %></td>
+                    <td><%= doctor.doctor_availability %></td>
+                    <td><%= doctor.email_address %></td>
+                    <td><%= doctor.phone_number %></td>
+                    <td><%= doctor.date_joined %></td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</main>>
