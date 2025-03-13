@@ -63,7 +63,7 @@ For the Flask application, the necessary libraries are listed in the `requiremen
 ### **Steps**
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/telemed.git
+   git clone https://github.com/donshammah96/Telemedicine.git
    cd telemed
 
 
